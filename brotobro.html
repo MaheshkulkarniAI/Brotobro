@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro to Bro</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a; /* Deep dark theme background */
+            color: #ffd700; /* Yellow text color for better contrast */
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffd700; /* Yellow link color */
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e0e0e0; /* Light color on hover */
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1f1f1f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            transition: transform 0.3s;
+        }
+
+        nav ul li:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #ffd700;
+            animation: fadeInHero 1.5s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+
+        .hero button {
+            padding: 12px 24px;
+            background-color: #ffd700;
+            border: none;
+            color: #0a0a0a;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .hero button:hover {
+            background-color: #ffc400;
+            transform: scale(1.05);
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeInHero {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 50px 5%;
+            border-bottom: 1px solid #333;
+        }
+
+        .section h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-size: 32px;
+            border-bottom: 2px solid #ffd700;
+            display: inline-block;
+        }
+
+        /* Categories Section */
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .category-item {
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            flex: 1 1 250px;
+            max-width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .category-item:hover {
+            transform: scale(1.1);
+        }
+
+        .category-item h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .category-item p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Bro to Bro</div>
+        <ul>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#bro-code">Bro Code</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#store">Merch Store</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Connecting Bros Worldwide</h1>
+            <p>Your go-to platform for financial freedom and well-being.</p>
+            <button>Join the Brotherhood</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <h3>Bro-tainment</h3>
+                <p>Memes, podcasts, funny videos, and trending topics.</p>
+            </div>
+            <div class="category-item">
+                <h3>Financial Literacy</h3>
+                <p>Money management, investments, and financial growth tips.</p>
+            </div>
+            <div class="category-item">
+                <h3>Fitness & Health</h3>
+                <p>Workout routines, diet plans, mental health discussions.</p>
+            </div>
+            <div class="category-item">
+                <h3>Career & Growth</h3>
+                <p>Professional advice, job search tips, and career success stories.</p>
+            </div>
+            <div class="category-item">
+                <h3>Tech & Gaming</h3>
+                <p>The latest in tech, game reviews, and gaming tips.</p>
+            </div>
+            <div class="category-item">
+                <h3>Sports Talk</h3>
+                <p>Match analysis, game strategies, and sports discussions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bro to Bro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
